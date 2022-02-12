@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+
+<head>
+  <meta charset="utf-8">
+  <title>Calculator.com</title>
+  <style media="screen">
+    button {
+      border-radius: 15px;
+      padding: 5px;
+      font-family: cursive;
+      font-weight: bold;
+    }
+
+    input {
+      border-radius: 5px;
+      background-color: lightgrey;
+      padding: 5px;
+      font-weight: bold;
+      font-family: cursive;
+    }
+
+    p {
+      font-family: roboto, sans-serif;
+    }
+
+    .submit {
+      width: 100px;
+    }
+  </style>
+</head>
+<br><br>
+
+<body style="background-image:url(wallpaper.jpg)">
+  <center>
+    <p1 style="align:center"><img src="calc.png" alt="" style="height:100px;width:100px"></p1>
+    <h1 style="color:lightcyan; font-family: Consolas">Calculate online !!</h1><br>
+    <p style="color:lightcyan">Enter your favourite number1:&nbsp<input type="text" id="i1" placeholder="first number"></p>
+    <p style="color:lightcyan">Enter your favourite number2:&nbsp<input type="text" id="i2" placeholder="second number"></p><br>
+    <button type="button" name="button" onclick="add()">Add</button>
+    <button type="button" name="button" onclick="sub()">Subtract</button>
+    <button type="button" name="button" onclick="mul()">Multiply</button>
+    <button type="button" name="button" onclick="div()">Divide</button>
+    <button type="button" name="button" onclick="sqr()">Square</button>
+    <button type="button" name="button" onclick="cub()">Cube</button><br><br>
+    <button type="button" name="button" onclick="per()">%</button>
+    <button type="button" name="button" onclick="sin()">Sin</button><br><br>
+    <input type="reset" value="Reset" class="submit" onclick="location.reload()">
+    <br>
+    <p style="color:lightcyan">Answer: <input type="text" id="out" style="width:50px"></p>
+  </center>
+  <script type="text/javascript" src="calculator.js">
+
+  </script>
+</body>
+
+</html>
