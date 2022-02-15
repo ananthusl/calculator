@@ -20,7 +20,6 @@
     }
     input {
       border-radius: 5px;
-      background-color: lightgrey;
       padding: 5px;
       font-weight: bold;
       font-family: cursive;
@@ -37,6 +36,7 @@
     .reset {
       width: 100px;
       color:black;
+      background-color:white;
       border-radius: 5px;
     }
     .reset:hover{
@@ -67,7 +67,7 @@
     <button type="button" name="button" onclick="sin()">Sin</button><br><br>
     <input type="reset" value="Reset" class="reset" onclick="location.reload()">
     <br>
-    <p style="color:lightcyan">Answer: <input type="text" class="answer"></p>
+    <p style="color:lightcyan">Answer: <input type="text" class="answer" id="out"></p>
   </center>
   <script type="text/javascript" src="calculator.js">
 
