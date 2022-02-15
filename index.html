@@ -12,6 +12,7 @@
       font-weight: bold;
       border:none;
       outline:none;
+      margin-left:5px;
     }
     button:hover{
       transform:scale(1.05);
@@ -22,6 +23,10 @@
       padding: 5px;
       font-weight: bold;
       font-family: cursive;
+      caret-color:red;
+      color:red;
+      outline:none;
+      
     }
 
     p {
@@ -29,6 +34,12 @@
     }
 
     .submit {
+      width: 100px;
+    }
+    .submit:hover{
+      background-color:cyan;
+    }
+    .answer{
       width: 100px;
     }
   </style>
@@ -51,7 +62,7 @@
     <button type="button" name="button" onclick="sin()">Sin</button><br><br>
     <input type="reset" value="Reset" class="submit" onclick="location.reload()">
     <br>
-    <p style="color:lightcyan">Answer: <input type="text" id="out" style="width:50px"></p>
+    <p style="color:lightcyan">Answer: <input type="text" id="out" style="width:50px" class="answer"></p>
   </center>
   <script type="text/javascript" src="calculator.js">
 
