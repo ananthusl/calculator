@@ -34,19 +34,19 @@
       font-family: roboto, sans-serif;
     }
 
-    .submit {
+    .reset {
       width: 100px;
-    }
-    .submit:hover{
-      background-color:cyan;
       color:black;
+      border-radius: 5px;
     }
-    .answer{
-      width: 150px;
-    }
-    .answer:hover{
+    .reset:hover{
+      background-color:cyan;
       transform:scale(1.05);
     }
+    .answer{
+      width: 100px;
+    }
+    
   </style>
 </head>
 <br><br>
@@ -65,9 +65,9 @@
     <button type="button" name="button" onclick="cub()">Cube</button><br><br>
     <button type="button" name="button" onclick="per()">%</button>
     <button type="button" name="button" onclick="sin()">Sin</button><br><br>
-    <input type="reset" value="Reset" class="submit" onclick="location.reload()">
+    <input type="reset" value="Reset" class="reset" onclick="location.reload()">
     <br>
-    <p style="color:lightcyan">Answer: <input type="text" id="out" style="width:50px" class="answer"></p>
+    <p style="color:lightcyan">Answer: <input type="text" class="answer"></p>
   </center>
   <script type="text/javascript" src="calculator.js">
 
